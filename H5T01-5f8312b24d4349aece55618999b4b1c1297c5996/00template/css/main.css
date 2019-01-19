@@ -1,7 +1,15 @@
+/* Global Tag Style */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* My Style, 커스터마이징 */
 #wrapper {
   /* width: 1140px; */
   width: 1000px;
   margin: 0 auto;
+  padding-bottom: 100px;
 }
 img {
   width: 100%;
@@ -10,7 +18,115 @@ img {
   text-align: center;
   font-size: 2rem;   /* rem : 비율단위로 저장 */
 }
+/* 
 #header a {
   text-decoration: none;
   color: #000000;
+}
+*/
+
+a {
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+  /* cursor: wait; */
+}
+#nav ul {
+  list-style: none;
+}
+
+#nav ul li {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  background-color: #813494;
+  padding: 10px;
+}
+
+#nav ul a {
+  color: #ffffff;
+}
+
+/* ul태그중에서 menu클래스가 적용된다. */
+#nav ul.menus {
+  float: left;
+}
+
+#nav ul.icons {
+  float: right;
+}
+
+#main {
+  clear: both;
+}
+
+.featured {
+  /* margin: 20px 0 10px 5px; */
+  margin-top: 88px;
+  padding: 0;
+}
+
+.featured header h2 {
+  text-align: center;
+}
+
+#footer {
+  border-top: solid 1px gray;
+  padding-top: 30px;
+  display: flex;
+}
+
+/* 균등한 레이아웃을 지정할때 사용한다.(각각의 영역 비중이 1이다. 아래 예는 전체 3중에서 왼쪽이 1/3, 오른쪽이 2/3 이다.)
+#footer .contact {
+  flex: 1;
+}
+#footer .info {
+  flex: 2;
+}
+*/
+#footer .contact,
+#footer .info {
+  flex: 1;
+  padding: 30px;
+}
+
+#footer .contact label,
+#footer .contact input {
+  display: block;
+}
+
+#footer .contact label {
+  margin-bottom: 10px;
+}
+
+#footer .contact input {
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 20px;
+}
+
+#footer .contact textarea {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#footer .info ul {
+  list-style: none;
+}
+
+#footer .info ul li {
+  display: inline-block;
+}
+
+/* position -> fixed : 브라우저 기준으로 화면에 고정한다.  */
+#copyright {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: #262626;
+  color: #ededed;
 }
