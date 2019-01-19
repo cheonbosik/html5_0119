@@ -1,0 +1,16 @@
+#wrapper {
+  /* width: 1140px; */
+  width: 1000px;
+  margin: 0 auto;
+}
+img {
+  width: 100%;
+}
+#header {
+  text-align: center;
+  font-size: 2rem;   /* rem : 비율단위로 저장 */
+}
+#header a {
+  text-decoration: none;
+  color: #000000;
+}
